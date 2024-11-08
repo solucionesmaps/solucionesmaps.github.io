@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAPS SOLUCIONES</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .container {
+            max-width: 100%;
+            max-height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            max-width: 500px; /* Tamaño máximo para la imagen */
+            max-height: 500px; /* Tamaño máximo para la imagen */
+        }
+
+        .contact {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #333;
+        }
+        
+        .contact a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="imagen.jpg" alt="Imagen centrada">
+        <div class="contact">
+            <p>Contacto: <a id="email" href="#">[email protected]</a></p>
+        </div>
+    </div>
+
+    <script>
+        const usuario = "contacto";         // Nombre de usuario
+        const dominio = "solucionesmap";    // Dominio
+        const tld = "com";                  // Extensión de dominio (TLD)
+
+        // Reconstruimos la dirección de correo y la aplicamos al enlace
+        const email = `${usuario}@${dominio}.${tld}`;
+        const emailElement = document.getElementById("email");
+        emailElement.textContent = email;
+        emailElement.href = `mailto:${email}`;
+    </script>
+</body>
+</html>
