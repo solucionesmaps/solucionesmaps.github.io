@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imagen Centrada</title>
+    <title>MAPS SOLUCIONES</title>
     <style>
-        /* Estilos generales para centrar la imagen */
         body, html {
             margin: 0;
             padding: 0;
@@ -58,19 +57,18 @@
 </head>
 <body>
     <div class="container">
-        <img src="ruta-de-la-imagen.jpg" alt="Imagen centrada">
+        <img src="imagen.jpg" alt="Imagen centrada">
         <div class="contact">
             <p>Contacto: <a id="email" href="#">[email protected]</a></p>
         </div>
     </div>
 
     <script>
-        // Definimos partes de la dirección de correo de forma separada y ofuscada
+        
         const usuario = "contacto";         // Nombre de usuario
         const dominio = "solucionesmap";    // Dominio
         const tld = "com";                  // Extensión de dominio (TLD)
 
-        // Reconstruimos la dirección de correo y la aplicamos al enlace
         const email = `${usuario}@${dominio}.${tld}`;
         const emailElement = document.getElementById("email");
         emailElement.textContent = email;
